@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+
+:root {
+    --primarycolor: #fd6e0a;
+    --mainWhite: #fff;
+    --creamOrange: #fff8f3;
+    --mainBlack: #222;
+    --primaryText: #181818;
+    --secondaryText: #474747;
+    --lightText: ##757575;
+    --mainTransition: all 0.3s linear;
+    --mainSpacing: 0.25rem;
+    --lightShadow: 2px 5px 3px 0 rgba(0, 0, 0, 0.25);
+    --darkShadow: 7px 7px 5px 0 rgba(0, 0, 0, 0.5);
+}
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background: var(--mainWhite);
+}
+.btn-primary {
+    color: var(--mainWhite);
+    font-size: 20px;
+    padding: 20px 35px;
+    background: var(--primarycolor);
+    border: none;
+}
+/* navbar section */
+.text-primary {
+    color: var(--primarycolor);
+}
+.nav-title {
+    color: #181818;
+    font-family: Open Sans;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.contact-btn {
+    color: var(--primarycolor);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 35px;
+    background: transparent;
+    border: 1.8px solid var(--primarycolor);
+    border-radius: 5px;
+    margin-left: 2rem;
+}
+@media screen and (min-width: 778px) {
+    .header-section {
+        background-color: #fff8f3;
+        background-image: url("../images/header_bg.png");
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 250px;
+    }
+    nav > ul {
+        display: flex;
+        align-items: center;
+    }
+    nav li {
+        list-style-type: none;
+    }
+    .nav-link {
+        text-decoration: none;
+        color: #474747;
+        font-size: 20px;
+        font-style: normal;
+        margin-right: 50px;
+    }
+    .banner {
+        padding: 20px 50px 0px 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .banner-content {
+        margin-top: 30px;
+    }
+    .banner-greeting {
+        color: var(--secondaryText);
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .banner-title {
+        color: var(--primaryText);
+        font-size: 85px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .banner-description {
+        color: var(--lightText);
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+}
